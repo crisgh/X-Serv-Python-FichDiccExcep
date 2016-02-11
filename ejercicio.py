@@ -22,5 +22,5 @@ try:
     print "Root :", Users["root"] #Nos muestra la shell del elemento Root
     print "Imaginario :",  Users["imaginario"] # Este elemento no existe --> Except
 
-except: #Elevamos la excepcion para el elemento del diccionario que no encuentre
+except KeyError: #Elevamos la excepcion para el elemento del diccionario que no encuentre
     print "Usuario no encontrado"
